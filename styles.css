@@ -1,6 +1,10 @@
+/* Importação da fonte Roboto e uma fonte de título */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* Estilos gerais do corpo */
 body {
-    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
     line-height: 1.6; /* Espaçamento entre linhas */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimento padrão */
@@ -9,22 +13,25 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
-    background: #333; /* Cor de fundo do cabeçalho */
+    background: linear-gradient(to right, #c71f27, #e62429); /* Gradiente de vermelho */
     color: #fff; /* Cor do texto do cabeçalho */
-    padding: 10px 0; /* Preenchimento acima e abaixo */
+    padding: 20px 0; /* Preenchimento acima e abaixo */
     text-align: center; /* Alinhamento central */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra no cabeçalho */
 }
 
 /* Estilos do título */
 h1 {
     font-size: 3.5em; /* Tamanho do título */
     margin: 0; /* Remove margens padrão */
+    font-family: 'Montserrat', sans-serif; /* Fonte para o título */
 }
 
 /* Estilo da logo da Marvel */
 .logo {
     max-width: 150px; /* Tamanho máximo da logo */
     height: auto; /* Ajuste automático da altura */
+    margin-top: 10px; /* Margem superior para separar do título */
 }
 
 /* Estilos para o conteúdo principal */
@@ -34,7 +41,7 @@ main {
 
 /* Estilo para o título da seção "Top 10" */
 .top-10-container h2 {
-    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e elegante */
+    font-family: 'Montserrat', sans-serif; /* Uma fonte moderna e elegante */
     font-size: 2.5em; /* Aumenta o tamanho do título */
     color: #e62429; /* Vermelho característico da Marvel */
     text-transform: uppercase; /* Deixa o título em letras maiúsculas */
@@ -90,6 +97,21 @@ iframe {
     height: 250px; /* Altura dos iframes */
     border: none; /* Remove borda padrão */
     margin-bottom: 20px; /* Margem inferior para espaçamento */
+}
+
+/* Estilos para botões */
+button {
+    background-color: #e62429; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #c71f27; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilos para o rodapé */
