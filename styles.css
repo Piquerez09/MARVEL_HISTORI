@@ -36,40 +36,29 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Top 10 List */
-#top-10 ol {
-    background-color: #333; /* Fundo escuro para contraste */
-    padding: 20px;
-    border-radius: 8px;
-}
-
 /* Estilos para Top 10 e imagem ao lado */
 .top-10-container {
-    display: flex;
-    align-items: flex-start; /* Alinhar itens no topo */
     margin-bottom: 30px;
 }
 
 .top-10-content {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start; /* Alinha a lista e a imagem no topo */
     gap: 20px; /* Espaçamento entre a lista e a imagem */
 }
 
 .top-10-content ol {
-    list-style-position: inside; /* Alinha os números da lista */
+    list-style-position: inside; /* Mantém os números alinhados */
     font-size: 1.2em;
+    padding-left: 20px; /* Ajusta o espaçamento interno */
     margin: 0;
-    padding: 0;
 }
 
 .side-image {
-    max-width: 300px; /* Controla o tamanho da imagem */
+    max-width: 300px; /* Limita a largura da imagem */
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
-}
-
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
 }
 
 /* Movie List */
