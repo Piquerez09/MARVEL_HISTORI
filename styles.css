@@ -112,3 +112,41 @@ footer {
     font-size: 0.9em;
     border-top: 1px solid #444;
 }
+/* Estilos para o cabeçalho */
+.logo-container {
+    display: flex; /* Usa Flexbox para colocar a logo e a imagem lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaço acima da logo */
+}
+
+.logo {
+    max-width: 150px; /* Tamanho da logo */
+    height: auto;
+    margin-right: 20px; /* Espaço entre a logo e a imagem ao lado */
+}
+
+.side-image {
+    max-width: 100px; /* Tamanho da nova imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+/* Estilo para o botão Disney+ */
+.disney-button {
+    display: inline-block; /* Faz o botão se comportar como um bloco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    color: #fff; /* Texto branco */
+    background-color: #e62429; /* Fundo vermelho */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 1.2em; /* Tamanho do texto do botão */
+    transition: background-color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.disney-button:hover {
+    background-color: #b11f24; /* Cor mais escura quando o mouse passa por cima */
+}
+
