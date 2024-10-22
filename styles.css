@@ -138,7 +138,6 @@ button:hover {
     max-width: 800px; /* Limita a largura máxima para melhor visualização */
 }
 .top-10-list {
-    background-color: #333; /* Fundo escuro para a lista */
     padding: 20px;
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
