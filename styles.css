@@ -71,16 +71,6 @@ h2 {
     list-style: none;
 }
 
-#filmes li {
-    background-color: #444;
-    padding: 10px;
-    border-radius: 8px;
-    width: 30%;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-/* Estilos para a seção de vídeos */
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -90,12 +80,11 @@ h2 {
 }
 
 iframe {
-    width: 45%;
-    height: 250px;
+    width: 45%; /* Ajuste a largura conforme necessário */
+    height: 250px; /* Ajuste a altura conforme necessário */
     border-radius: 8px;
     border: 2px solid #ff9900; /* Borda laranja para os vídeos */
 }
-
 /* Estilos para o rodapé */
 footer {
     background-color: #181818;
