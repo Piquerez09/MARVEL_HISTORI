@@ -71,32 +71,28 @@ h2 {
     list-style: none;
 }
 /* Estilos para a seção de vídeos */
-./* Estilos para a seção de vídeos */
-video-container {
-    display: grid; /* Utiliza grid para melhor organização */
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Ajusta o número de colunas */
+.video-container {
+    display: flex; /* Usa flexbox para organização */
+    flex-wrap: wrap; /* Permite que os vídeos se movam para a próxima linha */
     gap: 20px; /* Espaçamento entre os vídeos */
+    justify-content: center; /* Centraliza os vídeos */
     margin-top: 20px;
 }
+
 iframe {
-    width: 100%; /* Ajusta para ocupar a largura total do grid */
-    height: 150px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* Ajusta para ocupar a largura total do espaço */
+    max-width: 300px; /* Limita a largura máxima dos vídeos */
+    height: 200px; /* Define uma altura fixa */
     border-radius: 8px;
     border: 2px solid #ff9900; /* Borda laranja para os vídeos */
 }
 
-/* Para telas pequenas */
+/* Para telas menores */
 @media (max-width: 600px) {
-    .video-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-
     iframe {
-        height: 120px; /* Ajusta a altura para telas menores */
+        height: 150px; /* Ajusta a altura para telas menores */
     }
 }
-
-
 /* Estilos para o rodapé */
 footer {
     background-color: #181818;
