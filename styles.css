@@ -122,3 +122,70 @@ button {
 button:hover {
     background-color: #c71f27; /* Cor de fundo ao passar o mouse */
 }
+/* Estilos para Top 10 e imagem ao lado */
+.top-10-container {
+    display: flex;
+    flex-direction: column; /* Mantém o título em coluna */
+    align-items: center; /* Centraliza o título */
+    margin-bottom: 30px;
+}
+
+.top-10-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha itens no topo */
+    margin-top: 20px; /* Espaçamento entre o título e a lista/imagem */
+    width: 100%; /* Faz com que a seção utilize a largura total */
+    max-width: 800px; /* Limita a largura máxima para melhor visualização */
+}
+
+.top-10-list {
+    background-color: #333; /* Fundo escuro para a lista */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
+    list-style-position: inside; /* Alinha os números da lista */
+    font-size: 1.2em;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    flex: 1; /* Faz com que a lista ocupe espaço disponível */
+    max-width: 50%; /* Limita a largura da lista para melhor organização */
+}
+
+.top-10-list li {
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
+    color: #ff9900; /* Cor laranja para os itens da lista */
+    position: relative; /* Para posicionar o número de cada item */
+}
+
+.top-10-list li::before {
+    content: counter(item) ". "; /* Adiciona contagem automática */
+    counter-increment: item; /* Incrementa o contador */
+    position: absolute; /* Posiciona o número antes do item */
+    left: -30px; /* Espaçamento à esquerda para o número */
+    color: #e62429; /* Vermelho característico da Marvel */
+    font-weight: bold; /* Destaque no número */
+}
+
+.side-image {
+    max-width: 250px; /* Diminuindo o tamanho da imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    margin-left: 20px; /* Espaçamento à esquerda da imagem */
+}
+
+/* Estilo para o título da seção "Top 10" */
+.top-10-container h2 {
+    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e elegante */
+    font-size: 2.5em; /* Aumenta o tamanho do título */
+    color: #e62429; /* Vermelho característico da Marvel */
+    text-transform: uppercase; /* Deixa o título em letras maiúsculas */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento inferior para distanciar do conteúdo */
+    letter-spacing: 2px; /* Espaçamento entre letras para dar um visual mais clean */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao texto */
+    border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
+    padding-bottom: 10px; /* Espaçamento entre o título e a linha */
+}
