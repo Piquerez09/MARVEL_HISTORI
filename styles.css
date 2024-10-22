@@ -188,3 +188,28 @@ button:hover {
     border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
     padding-bottom: 10px; /* Espaçamento entre o título e a linha */
 }
+/* Estilos para o tema claro */
+body.light {
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+}
+
+header.light {
+    background-color: #ff0000; /* Fundo vermelho para o cabeçalho */
+}
+
+h2.light {
+    color: #ff9900; /* Cor laranja para os títulos */
+}
+
+footer.light {
+    background-color: #f0f0f0; /* Fundo claro para o rodapé */
+    color: #000; /* Texto escuro para o rodapé */
+}
+
+button.light {
+    background-color: #e62429; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+}
+
+/* Repita as regras de estilo para outros elementos, se necessário */
