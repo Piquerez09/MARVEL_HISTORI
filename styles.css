@@ -162,7 +162,7 @@ button:hover {
     counter-increment: item; /* Incrementa o contador */
     position: absolute; /* Posiciona o número antes do item */
     left: -30px; /* Espaçamento à esquerda para o número */
-    color: #e62429; /* Vermelho característico da Marvel */
+    color: #ff9900; /* Vermelho característico da Marvel */
     font-weight: bold; /* Destaque no número */
 }
 
@@ -179,7 +179,7 @@ button:hover {
 .top-10-container h2 {
     font-family: 'Roboto', sans-serif; /* Uma fonte moderna e elegante */
     font-size: 2.5em; /* Aumenta o tamanho do título */
-    color: #e62429; /* Vermelho característico da Marvel */
+    color: ##ff9900; /* Vermelho característico da Marvel */
     text-transform: uppercase; /* Deixa o título em letras maiúsculas */
     text-align: center; /* Centraliza o título */
     margin-bottom: 20px; /* Espaçamento inferior para distanciar do conteúdo */
