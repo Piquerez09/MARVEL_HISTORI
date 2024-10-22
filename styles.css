@@ -1,33 +1,32 @@
-/* Importação da fonte Roboto e uma fonte de título */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Fonte moderna */
-    background-color: #202020; /* Cor de fundo escura */
-    color: #f0f0f0; /* Texto claro para contraste */
+    font-family: 'Roboto', sans-serif;
+    background-color: #202020;
+    color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #ff0000; /* Fundo vermelho Marvel */
+    background-color: #ff0000;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     font-size: 3em;
     color: #fff;
     margin: 0;
-    font-family: 'Montserrat', sans-serif; /* Fonte para o título */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
-    max-width: 200px; /* Limita o tamanho do logo */
+    max-width: 200px;
     margin-top: 10px;
 }
 
@@ -38,153 +37,23 @@ main {
 
 /* Estilo para o título das seções */
 h2 {
-    color: #ff9900; /* Cor laranja para destaques */
-    border-bottom: 2px solid #ff9900; /* Linha de destaque nos títulos */
+    color: #ff9900;
+    border-bottom: 2px solid #ff9900;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* Fonte para os títulos */
-}
-#nivel-de-poder {
-    margin-top: 40px; /* Espaço acima da seção */
-}
-/* Top 10 List */
-#top-10 {
-    margin-bottom: 30px; /* Espaçamento inferior para a seção */
+    font-family: 'Montserrat', sans-serif;
 }
 
-#top-10 ol {
-    background-color: #333; /* Fundo escuro para contraste */
-    padding: 20px;
-    border-radius: 8px;
-    list-style-position: inside; /* Alinha os números da lista */
-}
-
-#top-10 li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Estilos para a lista de filmes */
-#filmes ul {
+.video-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-}
-/* Estilos para a seção de vídeos */
-.video-container {
-    display: flex; /* Usa flexbox para organização */
-    flex-wrap: wrap; /* Permite que os vídeos se movam para a próxima linha */
-    gap: 20px; /* Espaçamento entre os vídeos */
-    justify-content: center; /* Centraliza os vídeos */
+    gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
 iframe {
-    width: 100%; /* Ajusta para ocupar a largura total do espaço */
-    max-width: 300px; /* Limita a largura máxima dos vídeos */
-    height: 200px; /* Define uma altura fixa */
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
     border-radius: 8px;
-    border: 2px solid #ff9900; /* Borda laranja para os vídeos */
-}
-
-/* Para telas menores */
-@media (max-width: 600px) {
-    iframe {
-        height: 150px; /* Ajusta a altura para telas menores */
-    }
-}
-/* Estilos para o rodapé */
-footer {
-    background-color: #181818;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 0.9em;
-    border-top: 1px solid #444;
-}
-
-/* Estilos para o botão Disney+ */
-button {
-    background-color: #e62429; /* Cor do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove borda padrão */
-    padding: 10px 20px; /* Preenchimento do botão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    font-size: 1em; /* Tamanho do texto do botão */
-}
-
-button:hover {
-    background-color: #c71f27; /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilos para Top 10 e imagem ao lado */
-.top-10-container {
-    display: flex;
-    flex-direction: column; /* Mantém o título em coluna */
-    margin-bottom: 30px;
-}
-
-.top-10-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinha itens no topo */
-    margin-top: 20px; /* Espaçamento entre o título e a lista/imagem */
-    width: 100%; /* Faz com que a seção utilize a largura total */
-    max-width: 800px; /* Limita a largura máxima para melhor visualização */
-}
-
-.top-10-list {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
-    list-style: none; /* Remove estilo padrão da lista */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding padrão */
-    flex: 1; /* Faz com que a lista ocupe espaço disponível */
-    max-width: 50%; /* Limita a largura da lista para melhor organização */
-}
-
-.top-10-list li {
-    margin: 30px 0; /* Espaçamento entre os itens da lista */
-    color: #ff9900; /* Cor laranja para os itens da lista */
-    font-size: 1.2em; /* Tamanho da fonte para destaque */
-}
-
-.side-image {
-    max-width: 250px; /* Diminuindo o tamanho da imagem */
-    height: auto;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
-    flex-shrink: 0; /* Impede que a imagem encolha */
-    margin-left: 20px; /* Espaçamento à esquerda da imagem */
-}
-
-/* Estilo para o título da seção "Top 10" */
-.top-10-container h2 {
-    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e elegante */
-    font-size: 2.5em; /* Aumenta o tamanho do título */
-    color: #ff9900; /* Vermelho característico da Marvel */
-    text-transform: uppercase; /* Deixa o título em letras maiúsculas */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Espaçamento inferior para distanciar do conteúdo */
-    letter-spacing: 2px; /* Espaçamento entre letras para dar um visual mais clean */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao texto */
-    border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
-    padding-bottom: 10px; /* Espaçamento entre o título e a linha */
-}
-#nivel-de-poder {
-    margin-top: 40px; /* Espaço acima da seção */
-}
-
-#nivel-de-poder h2 {
-    color: #ff9900; /* Cor laranja para o título */
-    border-bottom: 2px solid #ff9900; /* Linha de destaque */
-    padding-bottom: 10px; /* Espaço abaixo do título */
-    margin-bottom: 20px; /* Espaço inferior */
-}
