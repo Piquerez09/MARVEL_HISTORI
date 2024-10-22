@@ -122,3 +122,29 @@ button {
 button:hover {
     background-color: #c71f27; /* Cor de fundo ao passar o mouse */
 }
+/* Estilos para Top 10 e imagem ao lado */
+.top-10-container {
+    display: flex;
+    align-items: flex-start; /* Alinhar itens no topo */
+    margin-bottom: 30px;
+}
+
+.top-10-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre a lista e a imagem */
+}
+
+.top-10-content ol {
+    list-style-position: inside; /* Alinha os números da lista */
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.side-image {
+    max-width: 300px; /* Controla o tamanho da imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
+}
