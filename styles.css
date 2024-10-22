@@ -126,7 +126,6 @@ button:hover {
 .top-10-container {
     display: flex;
     flex-direction: column; /* Mantém o título em coluna */
-    align-items: center; /* Centraliza o título */
     margin-bottom: 30px;
 }
 
