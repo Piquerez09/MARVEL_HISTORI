@@ -44,6 +44,16 @@ h2 {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif; /* Fonte para os títulos */
 }
+#nivel-de-poder {
+    margin-top: 40px; /* Espaço acima da seção */
+}
+
+#nivel-de-poder h3 {
+    color: #ff9900; /* Cor laranja para o título */
+    border-bottom: 2px solid #ff9900; /* Linha de destaque */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+    margin-bottom: 20px; /* Espaço inferior */
+}
 
 /* Top 10 List */
 #top-10 {
@@ -175,14 +185,4 @@ button:hover {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao texto */
     border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
     padding-bottom: 10px; /* Espaçamento entre o título e a linha */
-}
-#nivel-de-poder {
-    margin-top: 40px; /* Espaço acima da seção */
-}
-
-#nivel-de-poder h2 {
-    color: #ff9900; /* Cor laranja para o título */
-    border-bottom: 2px solid #ff9900; /* Linha de destaque */
-    padding-bottom: 10px; /* Espaço abaixo do título */
-    margin-bottom: 20px; /* Espaço inferior */
 }
