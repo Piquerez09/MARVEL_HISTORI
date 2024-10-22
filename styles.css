@@ -1,75 +1,94 @@
-* {
-    box-sizing: border-box;
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;  /* Fonte moderna */
+    background-color: #202020;  /* Cor de fundo escura */
+    color: #f0f0f0;  /* Texto claro para contraste */
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
 header {
-    background-color: #c8102e;
-    color: white;
+    background-color: #ff0000; /* Fundo vermelho Marvel */
     text-align: center;
     padding: 20px;
 }
 
+header h1 {
+    font-size: 3em;
+    color: #fff;
+    margin: 0;
+}
+
 .logo {
-    width: 200px;
+    max-width: 200px;  /* Limita o tamanho do logo */
     margin-top: 10px;
 }
 
+/* Main Sections */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #c8102e;
-    margin-bottom: 10px;
+    color: #ff9900;  /* Cor laranja para destaques */
+    border-bottom: 2px solid #ff9900; /* Linha de destaque nos títulos */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-ol, ul {
-    background: #f9f9f9;
+/* Top 10 List */
+#top-10 ol {
+    background-color: #333; /* Fundo escuro para contraste */
+    padding: 20px;
     border-radius: 8px;
-    padding: 15px;
+}
+
+#top-10 li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Movie List */
+#filmes ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
     list-style: none;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-ol li, ul li {
-    margin: 5px 0;
+#filmes li {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
+/* Video Section */
 .video-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
-.video-container iframe {
-    width: 100%;
-    max-width: 300px;
-    height: 169px; /* Proporção 16:9 */
+iframe {
+    width: 45%;
+    height: 250px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff9900;
 }
 
+/* Footer */
 footer {
+    background-color: #181818;
+    color: #ccc;
     text-align: center;
     padding: 20px;
-    background-color: #c8102e;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
 }
