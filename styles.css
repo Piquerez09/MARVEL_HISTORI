@@ -8,20 +8,17 @@ body {
 }
 
 /* Estilos para o cabeçalho */
-.header-container {
-    display: flex; /* Usa Flexbox para colocar o título e a logo lado a lado */
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: center; /* Centraliza horizontalmente */
-    margin: 20px 0; /* Margem superior e inferior para espaçamento */
+header {
+    background: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 10px 0; /* Preenchimento acima e abaixo */
+    text-align: center; /* Alinhamento central */
 }
 
+/* Estilos do título */
 h1 {
-    font-family: 'Bebas Neue', sans-serif; /* Estilo da fonte */
     font-size: 3.5em; /* Tamanho do título */
-    color: #e62429; /* Cor do título */
-    text-transform: uppercase; /* Deixa todas as letras em maiúsculas */
-    letter-spacing: 5px; /* Espaçamento entre letras */
-    margin-right: 20px; /* Espaço entre o título e a logo */
+    margin: 0; /* Remove margens padrão */
 }
 
 /* Estilo da logo da Marvel */
@@ -30,18 +27,17 @@ h1 {
     height: auto; /* Ajuste automático da altura */
 }
 
-/* Estilo para o título da seção "Top 10" */
-.top-10-container h2 {
-    font-family: Arial, sans-serif; /* Fonte simples */
-    font-size: 1.8em; /* Tamanho do título do top 10 */
-    color: #000; /* Cor preta */
-    text-align: left; /* Alinhado à esquerda */
-    margin-bottom: 15px; /* Margem inferior */
-}
-
 /* Estilos para o conteúdo principal */
 main {
     padding: 20px; /* Preenchimento ao redor do conteúdo */
+}
+
+/* Estilo para o título da seção "Top 10" */
+#top-10 h2 {
+    font-family: Arial, sans-serif; /* Fonte simples */
+    font-size: 2em; /* Tamanho do título do top 10 */
+    color: #000; /* Cor preta */
+    margin-bottom: 15px; /* Margem inferior */
 }
 
 /* Estilos para listas ordenadas e não ordenadas */
@@ -69,23 +65,4 @@ footer {
     color: #fff; /* Cor do texto do rodapé */
     text-align: center; /* Alinhamento central */
     padding: 10px 0; /* Preenchimento acima e abaixo */
-}
-
-/* Estilo do botão Disney+ */
-.disney-button {
-    display: inline-block; /* Exibe como bloco inline */
-    background-color: #f9f9f9; /* Cor de fundo do botão */
-    color: #e62429; /* Cor do texto do botão */
-    padding: 10px 20px; /* Preenchimento do botão */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Cantos arredondados */
-    text-decoration: none; /* Remove sublinhado do texto */
-    font-weight: bold; /* Negrito */
-    margin-top: 10px; /* Margem superior */
-}
-
-.disney-button:hover {
-    background-color: #e62429; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
-    cursor: pointer; /* Cursor em forma de mão */
 }
