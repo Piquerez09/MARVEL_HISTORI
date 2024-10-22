@@ -160,7 +160,7 @@ button:hover {
 .top-10-list li::before {
     content: counter(item) ". "; /* Adiciona contagem automática */
     counter-increment: item; /* Incrementa o contador */
-    position: absolute; /* Posiciona o número antes do item */
+ /* Posiciona o número antes do item */
     left: -30px; /* Espaçamento à esquerda para o número */
     color: #ff9900; /* Vermelho característico da Marvel */
     font-weight: bold; /* Destaque no número */
