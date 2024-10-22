@@ -176,3 +176,13 @@ button:hover {
     border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
     padding-bottom: 10px; /* Espaçamento entre o título e a linha */
 }
+#nivel-de-poder {
+    margin-top: 40px; /* Espaço acima da seção */
+}
+
+#nivel-de-poder h2 {
+    color: #ff9900; /* Cor laranja para o título */
+    border-bottom: 2px solid #ff9900; /* Linha de destaque */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+    margin-bottom: 20px; /* Espaço inferior */
+}
