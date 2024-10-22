@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Fans</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- Link da fonte -->
 </head>
 <body>
     <header>
         <h1>Marvel Fans</h1>
-        <img src="https://wallpaperaccess.com/full/7146070.jpg" alt="Logo Marvel" class="logo">
+        <div class="logo-container"> <!-- Contêiner para logo e imagem -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marvel_Logo.svg/1024px-Marvel_Logo.svg.png" alt="Logo Marvel" class="logo">
+            <img src="https://th.bing.com/th/id/OIP.u4dkGcA1XLVqkMUIOMXV5wAAAA?rs=1&pid=ImgDetMain" alt="Imagem de Personagem Marvel" class="side-image"> <!-- Nova imagem ao lado -->
+        </div>
     </header>
     <main>
         <section id="top-10" class="top-10-container">
             <h2>Top 10 Personagens Mais Poderosos da Marvel</h2>
             <div class="top-10-content">
                 <ol>
-                    <li>    One-Above-All</li>
+                    <li>   One-Above-All</li>
                     <li>   Living Tribunal</li>
                     <li>   Franklin Richards</li>
                     <li>   Galactus</li>
@@ -28,9 +31,9 @@
                     <li>   Captain Marvel</li>
                     <li>   Thanos</li>
                 </ol>
-                <img src="https://th.bing.com/th/id/OIP.u4dkGcA1XLVqkMUIOMXV5wAAAA?rs=1&pid=ImgDetMain" alt="Marvel Character Image" class="side-image">
+                <img src="https://th.bing.com/th/id/OIP.u4dkGcA1XLVqkMUIOMXV5wAAAA?rs=1&pid=ImgDetMain" alt="Imagem de Personagem Marvel" class="side-image">
             </div>
-        </section>        
+        </section>
         <section id="filmes">
             <h2>Lista de Filmes da Marvel em Ordem Cronológica</h2>
             <ul>
@@ -78,13 +81,16 @@
             </div>
         </section>
     </main>
+    
     <audio controls loop>
-        <source src="LINK_DO_SEU_ARQUIVO_MP3" type="audio/mpeg"> <!-- MP3 para suporte amplo -->
-        <source src="seu_arquivo.ogg" type="audio/ogg"> <!-- OGG para navegadores adicionais -->
+        <source src="seu_arquivo.mp3" type="audio/mpeg">
+        <source src="seu_arquivo.ogg" type="audio/ogg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
     <footer>
         <p>&copy; 2024 Marvel Fans. Todos os direitos reservados.</p>
+        <a href="https://www.disneyplus.com/pt-br?gclid=07a8cf911af610f6b012a886b7e793a3&gclsrc=3p.ds&&cid=DSS-Search-Bing-71700000075038492&s_kwcid=AL!8468!10!79233764217949!disney%2B&msclkid=07" class="disney-button">Disney+</a>
     </footer>
 </body>
 </html>
