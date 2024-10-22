@@ -33,11 +33,17 @@ main {
 }
 
 /* Estilo para o título da seção "Top 10" */
-#top-10 h2 {
-    font-family: Arial, sans-serif; /* Fonte simples */
-    font-size: 2em; /* Tamanho do título do top 10 */
-    color: #000; /* Cor preta */
-    margin-bottom: 15px; /* Margem inferior */
+.top-10-container h2 {
+    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e elegante */
+    font-size: 2.5em; /* Aumenta o tamanho do título */
+    color: #e62429; /* Vermelho característico da Marvel */
+    text-transform: uppercase; /* Deixa o título em letras maiúsculas */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento inferior para distanciar do conteúdo */
+    letter-spacing: 2px; /* Espaçamento entre letras para dar um visual mais clean */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao texto */
+    border-bottom: 3px solid #e62429; /* Uma linha abaixo para dar destaque */
+    padding-bottom: 10px; /* Espaçamento entre o título e a linha */
 }
 
 /* Estilos para Top 10 e imagem ao lado */
