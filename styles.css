@@ -13,11 +13,18 @@ header {
     padding: 20px;
 }
 
+/* Estilo para o nome do site (Marvel Fans) */
 header h1 {
-    font-size: 3em;
-    color: #fff;
-    margin: 0;
+    font-family: 'Bebas Neue', sans-serif; /* Fonte estilosa, alta e impactante */
+    font-size: 3.5em; /* Tamanho grande para chamar atenção */
+    color: #e62429; /* Cor vermelha característica da Marvel */
+    text-transform: uppercase; /* Deixa todas as letras em maiúsculas */
+    letter-spacing: 5px; /* Aumenta o espaçamento entre as letras */
+    text-align: center; /* Centraliza o título no topo da página */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra de texto para profundidade */
+    margin-top: 20px; /* Adiciona um pouco de espaçamento superior */
 }
+
 
 .logo {
     max-width: 200px;  /* Limita o tamanho do logo */
