@@ -125,14 +125,18 @@ button:hover {
 /* Estilos para Top 10 e imagem ao lado */
 .top-10-container {
     display: flex;
-    align-items: flex-start; /* Alinhar itens no topo */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os itens */
     margin-bottom: 30px;
 }
 
 .top-10-content {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Espaçamento entre a lista e a imagem */
+    gap: 40px; /* Aumenta o espaçamento entre a lista e a imagem */
+    margin-top: 20px; /* Adiciona espaço entre o título e a lista/imagem */
+    width: 100%; /* Faz com que a seção utilize a largura total */
+    max-width: 800px; /* Limita a largura máxima para melhor visualização */
 }
 
 .top-10-content ol {
@@ -140,6 +144,10 @@ button:hover {
     font-size: 1.2em;
     margin: 0;
     padding: 0;
+}
+
+.top-10-content li {
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
 }
 
 .side-image {
