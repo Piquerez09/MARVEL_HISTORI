@@ -113,17 +113,22 @@ footer button:hover {
 .filmes-list {
     list-style: none;
     padding: 0;
+    display: grid; /* Usando grid para melhor layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .filmes-list li {
     background-color: #444;
     color: #fff;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    text-align: center; /* Centralizando o texto */
 }
 
 .filmes-list li:hover {
-    background-color: #ff9900;
+    background-color: #ff9900; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
