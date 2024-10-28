@@ -146,7 +146,16 @@ footer button:hover {
     opacity: 0; /* Inicialmente invisível */
     transition: opacity 0.3s; /* Transição para a borda */
 }
+/* Estilos do logo */
+.logo {
+    max-width: 150px; /* Tamanho máximo do logo */
+    margin-top: 10px; /* Espaçamento superior */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+}
 
-.filmes-list li:hover::before {
-    opacity: 1; /* Mostra a borda ao passar o mouse */
+.logo:hover {
+    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao passar o mouse */
 }
