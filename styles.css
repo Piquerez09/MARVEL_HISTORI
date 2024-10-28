@@ -159,9 +159,14 @@ footer button:hover {
     transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao passar o mouse */
 }
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o título e o botão de configurações */
+    align-items: center; /* Centraliza verticalmente */
+}
+
 .settings-container {
     position: relative;
-    display: inline-block;
 }
 
 #settings-button {
