@@ -145,3 +145,40 @@ footer button:hover {
     justify-content: space-between; 
     align-items: center; 
 }
+/* Estilos para o Top 10 */
+.top-10-container {
+    background-color: #444; /* Fundo mais escuro */
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 20px 0; 
+}
+
+.top-10-list {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0; 
+}
+
+.top-10-item {
+    background-color: #555; /* Cor de fundo para os itens */
+    color: #fff; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    position: relative; /* Para o efeito de foco */
+    text-align: center; /* Centralizando o texto */
+}
+
+.top-10-item:hover {
+    background-color: #d76d3b; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.top-10-item::before {
+    content: counter(item) ". "; /* Numeração */
+    counter-increment: item; /* Incrementa o contador */
+    font-weight: bold; /* Destaque para o número */
+    color: #ff9900; /* Cor do número */
+}
