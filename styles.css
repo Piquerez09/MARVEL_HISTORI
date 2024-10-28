@@ -168,12 +168,9 @@ footer button:hover {
     transition: background-color 0.3s, transform 0.3s; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
     position: relative; /* Para o efeito de foco */
-    text-align: center; /* Centralizando o texto */
-}
-
-.top-10-item:hover {
-    background-color: #d76d3b; /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    text-align: left; /* Alinhando o texto à esquerda */
+    display: flex; /* Usando flexbox para alinhar número e nome */
+    justify-content: space-between; /* Espaço entre número e nome */
 }
 
 .top-10-item::before {
@@ -181,4 +178,5 @@ footer button:hover {
     counter-increment: item; /* Incrementa o contador */
     font-weight: bold; /* Destaque para o número */
     color: #ff9900; /* Cor do número */
+    margin-right: 10px; /* Espaço entre o número e o nome */
 }
