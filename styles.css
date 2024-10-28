@@ -4,18 +4,18 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* Mudança para cor de fundo mais suave */
-    color: #333; /* Cor do texto mais suave */
+    background-color: #b0b0b0; /* Fundo mais escuro */
+    color: #222; /* Texto mais escuro */
     margin: 0;
     padding: 0;
 }
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #c0392b; /* Vermelho mais suave */
+    background-color: #a83226; /* Vermelho mais escuro */
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -32,8 +32,8 @@ main {
 
 /* Estilo para o título das seções */
 h2 {
-    color: #e67e22; /* Laranja mais suave */
-    border-bottom: 2px solid #e67e22;
+    color: #d76d3b; /* Laranja mais escuro */
+    border-bottom: 2px solid #d76d3b;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -62,12 +62,12 @@ iframe {
     max-width: 300px;
     height: 200px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
 }
 
 /* Estilos do rodapé */
 footer {
-    background-color: #c0392b; /* Vermelho mais suave */
+    background-color: #a83226; /* Vermelho mais escuro */
     text-align: center;
     padding: 10px;
     position: relative;
@@ -80,7 +80,7 @@ footer p {
 }
 
 footer button {
-    background-color: #e67e22; /* Laranja mais suave */
+    background-color: #d76d3b; /* Laranja mais escuro */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -89,15 +89,15 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #d35400; /* Laranja mais escuro ao passar o mouse */
+    background-color: #c65d24; /* Laranja mais escuro ao passar o mouse */
 }
 
 /* Estilos para a lista de filmes e séries */
 .filmes-container {
-    background-color: #ddd; /* Fundo mais claro */
+    background-color: #aaa; /* Fundo mais escuro */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
 }
 
@@ -110,18 +110,18 @@ footer button:hover {
 }
 
 .filmes-list li {
-    background-color: #f2f2f2; /* Cor de fundo mais clara */
-    color: #333; 
+    background-color: #888; /* Cor de fundo mais escura */
+    color: #fff; 
     padding: 20px;
     border-radius: 10px; 
     transition: background-color 0.3s, transform 0.3s; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
     text-align: center; 
     position: relative; 
 }
 
 .filmes-list li:hover {
-    background-color: #e67e22; 
+    background-color: #d76d3b; 
     transform: scale(1.05); 
 }
 
@@ -131,12 +131,12 @@ footer button:hover {
     margin-top: 10px; 
     border-radius: 10px; 
     transition: transform 0.3s, box-shadow 0.3s; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .logo:hover {
     transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
 }
 
 /* Estilos do menu de configurações */
