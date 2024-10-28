@@ -101,7 +101,7 @@ footer button {
 footer button:hover {
     background-color: #e68a00;
 }
-/* Estilos para a lista de filmes */
+/* Estilos para a lista de filmes e séries */
 .filmes-container {
     background-color: #333;
     border-radius: 10px;
@@ -126,9 +126,27 @@ footer button:hover {
     transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
     text-align: center; /* Centralizando o texto */
+    position: relative; /* Para o efeito de foco */
 }
 
 .filmes-list li:hover {
     background-color: #ff9900; /* Cor ao passar o mouse */
     transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.filmes-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #ff9900; /* Borda destacada */
+    border-radius: 10px; /* Arredondamento da borda */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s; /* Transição para a borda */
+}
+
+.filmes-list li:hover::before {
+    opacity: 1; /* Mostra a borda ao passar o mouse */
 }
