@@ -101,3 +101,29 @@ footer button {
 footer button:hover {
     background-color: #e68a00;
 }
+/* Estilos para a lista de filmes */
+.filmes-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+.filmes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filmes-list li {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filmes-list li:hover {
+    background-color: #ff9900;
+}
