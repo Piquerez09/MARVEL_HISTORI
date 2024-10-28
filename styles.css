@@ -26,7 +26,7 @@ header h1 {
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 100px;
     margin-top: 10px;
 }
 
@@ -44,6 +44,16 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilos para listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de vídeos */
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -57,9 +67,37 @@ iframe {
     max-width: 300px;
     height: 200px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.vingadores{
-    .imagem 
-    max-width: 200px;
-    }
+/* Estilo para a imagem dos Vingadores */
+.vingadores {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #ff0000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+footer button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer button:hover {
+    background-color: #e68a00;
+}
