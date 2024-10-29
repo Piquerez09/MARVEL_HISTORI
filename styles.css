@@ -160,3 +160,41 @@ footer button:hover {
     color: #ff9900; 
     margin-right: 10px; 
 }
+/* Estilo para o texto da história */
+.historia-text {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    background-color: #2a2a2a; /* Fundo escuro para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-top: 10px; /* Margem superior */
+}
+
+/* Estilos para o Top 10 */
+.top-10-list {
+    list-style: none; 
+    padding: 0; 
+    counter-reset: item; /* Reseta o contador */
+}
+
+.top-10-item {
+    background-color: #444444; /* Cor de fundo para os itens */
+    color: #fff; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    position: relative; 
+    text-align: left; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.top-10-item::before {
+    content: counter(item) ". "; /* Adiciona os números */
+    counter-increment: item; /* Incrementa o contador */
+    font-weight: bold; 
+    color: #ff9900; 
+    margin-right: 10px; 
+}
