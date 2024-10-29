@@ -4,8 +4,8 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #d0d0d0; /* Fundo mais escuro */
-    color: #222222; /* Texto mais escuro */
+    background-color: #1a1a1a; /* Fundo bem escuro */
+    color: #e0e0e0; /* Texto claro */
     margin: 0;
     padding: 0;
 }
@@ -68,7 +68,7 @@ footer button:hover {
 
 /* Estilos para a lista de filmes e séries */
 .filmes-container {
-    background-color: #c0c0c0; /* Cinza mais escuro */
+    background-color: #2a2a2a; /* Cinza escuro */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -84,7 +84,7 @@ footer button:hover {
 }
 
 .filmes-list li {
-    background-color: #a0a0a0; /* Cinza mais escuro */
+    background-color: #444444; /* Cinza mais escuro */
     color: #fff; 
     padding: 20px;
     border-radius: 10px; 
@@ -122,7 +122,7 @@ footer button:hover {
 
 /* Estilos para o Top 10 */
 .top-10-container {
-    background-color: #d0d0d0; /* Fundo mais escuro */
+    background-color: #2a2a2a; /* Fundo escuro */
     border-radius: 10px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
@@ -135,7 +135,7 @@ footer button:hover {
 }
 
 .top-10-item {
-    background-color: #a0a0a0; /* Cor de fundo para os itens */
+    background-color: #444444; /* Cor de fundo para os itens */
     color: #fff; 
     padding: 15px; 
     margin-bottom: 10px; 
@@ -146,6 +146,11 @@ footer button:hover {
     text-align: left; 
     display: flex; 
     justify-content: space-between; 
+}
+
+.top-10-item:hover {
+    background-color: #ff4500; /* Efeito hover igual ao da lista de filmes */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
 }
 
 .top-10-item::before {
