@@ -4,15 +4,15 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #b0b0b0; /* Fundo mais escuro */
-    color: #222; /* Texto mais escuro */
+    background-color: #f0f0f0; /* Fundo mais claro */
+    color: #333333; /* Texto mais escuro */
     margin: 0;
     padding: 0;
 }
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #a83226; /* Vermelho mais escuro */
+    background-color: #4a4a4a; /* Cinza escuro */
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -32,42 +32,16 @@ main {
 
 /* Estilo para o título das seções */
 h2 {
-    color: #d76d3b; /* Laranja mais escuro */
-    border-bottom: 2px solid #d76d3b;
+    color: #ff6f20; /* Laranja vibrante */
+    border-bottom: 2px solid #ff6f20;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Estilos para listas */
-ul, ol {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Estilos de vídeos */
-.video-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-iframe {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
-}
-
 /* Estilos do rodapé */
 footer {
-    background-color: #a83226; /* Vermelho mais escuro */
+    background-color: #4a4a4a; /* Cinza escuro */
     text-align: center;
     padding: 10px;
     position: relative;
@@ -80,7 +54,7 @@ footer p {
 }
 
 footer button {
-    background-color: #d76d3b; /* Laranja mais escuro */
+    background-color: #ff6f20; /* Laranja vibrante */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -89,12 +63,12 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #c65d24; /* Laranja mais escuro ao passar o mouse */
+    background-color: #e65c00; /* Laranja mais escuro ao passar o mouse */
 }
 
 /* Estilos para a lista de filmes e séries */
 .filmes-container {
-    background-color: #aaa; /* Fundo mais escuro */
+    background-color: #e0e0e0; /* Cinza claro */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -110,7 +84,7 @@ footer button:hover {
 }
 
 .filmes-list li {
-    background-color: #888; /* Cor de fundo mais escura */
+    background-color: #c0c0c0; /* Cinza mais escuro */
     color: #fff; 
     padding: 20px;
     border-radius: 10px; 
@@ -121,7 +95,7 @@ footer button:hover {
 }
 
 .filmes-list li:hover {
-    background-color: #d76d3b; 
+    background-color: #ff6f20; 
     transform: scale(1.05); 
 }
 
@@ -145,9 +119,10 @@ footer button:hover {
     justify-content: space-between; 
     align-items: center; 
 }
+
 /* Estilos para o Top 10 */
 .top-10-container {
-    background-color: #b0b0b0; /* Fundo mais escuro */
+    background-color: #f0f0f0; /* Fundo mais claro */
     border-radius: 10px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
@@ -155,28 +130,28 @@ footer button:hover {
 }
 
 .top-10-list {
-    list-style: none; /* Remove os marcadores padrão */
+    list-style: none; 
     padding: 0; 
 }
 
 .top-10-item {
-    background-color: #aaa; /* Cor de fundo para os itens */
+    background-color: #c0c0c0; /* Cor de fundo para os itens */
     color: #fff; 
     padding: 15px; 
     margin-bottom: 10px; 
     border-radius: 8px; 
     transition: background-color 0.3s, transform 0.3s; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-    position: relative; /* Para o efeito de foco */
-    text-align: left; /* Alinhando o texto à esquerda */
-    display: flex; /* Usando flexbox para alinhar número e nome */
-    justify-content: space-between; /* Espaço entre número e nome */
+    position: relative; 
+    text-align: left; 
+    display: flex; 
+    justify-content: space-between; 
 }
 
 .top-10-item::before {
-    content: counter(item) ". "; /* Numeração */
-    counter-increment: item; /* Incrementa o contador */
-    font-weight: bold; /* Destaque para o número */
-    color: #ff9900; /* Cor do número */
-    margin-right: 10px; /* Espaço entre o número e o nome */
+    content: counter(item) ". "; 
+    counter-increment: item; 
+    font-weight: bold; 
+    color: #ff9900; 
+    margin-right: 10px; 
 }
