@@ -187,6 +187,7 @@ footer button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
     display: flex; /* Usando flexbox para melhor controle */
     align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: space-between; /* Distribui espaço entre número e nome */
 }
 
 .top-10-item::before {
@@ -194,11 +195,12 @@ footer button:hover {
     counter-increment: item; /* Incrementa o contador */
     font-weight: bold; 
     color: #ff9900; 
-    margin-right: 15px; /* Espaço entre número e nome */
+    margin-right: 20px; /* Espaço entre número e nome */
     flex-shrink: 0; /* Impede que o número encolha */
 }
 
 .top-10-item-name {
     flex-grow: 1; /* Permite que o nome ocupe o espaço restante */
     text-align: left; /* Alinhando o texto à esquerda */
+    margin-left: 10px; /* Espaço à esquerda do nome */
 }
