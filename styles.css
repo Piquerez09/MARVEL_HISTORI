@@ -204,3 +204,11 @@ footer button:hover {
     text-align: left; /* Alinhando o texto à esquerda */
     margin-left: 10px; /* Espaço à esquerda do nome */
 }
+.video-container iframe {
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transição */
+}
+
+.video-container iframe:hover {
+    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+}
