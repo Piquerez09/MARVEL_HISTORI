@@ -1,39 +1,32 @@
 // Por enquanto, não temos funcionalidades específicas, mas aqui podemos adicionar interações no futuro
 console.log("Bem-vindo ao Marvel Fans!");
-<script>
-    // Verifica se há uma preferência de tema armazenada
-    const savedTheme = localStorage.getItem('theme');
-    const body = document.body;
-    const header = document.querySelector('header');
-    const footer = document.querySelector('footer');
-    const top10Items = document.querySelectorAll('.top-10-item');
-    const themeSelector = document.getElementById('theme-selector');
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Verifica a preferência de tema armazenada
+    const currentTheme = localStorage.getItem('theme') || 'dark';
 
-    // Define o tema inicial
-    if (savedTheme) {
-        body.classList.toggle('light', savedTheme === 'light');
-        header.classList.toggle('light', savedTheme === 'light');
-        footer.classList.toggle('light', savedTheme === 'light');
-        top10Items.forEach(item => item.classList.toggle('light', savedTheme === 'light'));
-        themeSelector.value = savedTheme; // Atualiza o seletor de tema
+    // Aplica o tema correto ao carregar a página
+    if (currentTheme === 'light') {
+        document.body.classList.add('light');
+        document.querySelector('header').classList.add('light');
+        document.querySelector('footer').classList.add('light');
+        document.querySelectorAll('h2').forEach(title => title.classList.add('light'));
+        themeToggle.textContent = 'Tema Escuro';
+    } else {
+        themeToggle.textContent = 'Tema Claro';
     }
 
-    // Adiciona evento de mudança ao seletor de tema
-    themeSelector.addEventListener('change', () => {
-        const theme = themeSelector.value;
-        localStorage.setItem('theme', theme); // Armazena a preferência de tema
-        location.reload(); // Atualiza a página
+    // Evento para alternar entre temas
+    themeToggle.addEventListener('click', () => {
+        if (document.body.classList.contains('light')) {
+            // Muda para tema escuro
+            localStorage.setItem('theme', 'dark');
+            location.reload(); // Atualiza a página
+        } else {
+            // Muda para tema claro
+            localStorage.setItem('theme', 'light');
+            location.reload(); // Atualiza a página
+        }
     });
-</script>
-// Adiciona evento de mudança ao seletor de tema
-themeSelector.addEventListener('change', () => {
-    const theme = themeSelector.value;
-    localStorage.setItem('theme', theme); // Armazena a preferência de tema
-    body.classList.toggle('light', theme === 'light');
-    header.classList.toggle('light', theme === 'light');
-    footer.classList.toggle('light', theme === 'light');
-    document.querySelectorAll('h2').forEach(title => {
-        title.classList.toggle('light', theme === 'light');
-    });
-    location.reload(); // Atualiza a página
 });
