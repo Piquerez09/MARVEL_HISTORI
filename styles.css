@@ -250,36 +250,7 @@ footer button:hover {
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
 }
-@media (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
-    .top-10-list {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav a {
-    color: #ff4500;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-nav a:hover {
-    color: #e63900; /* Cor ao passar o mouse */
-}
-.top-10-item:hover {
-    transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
+
 button {
     background-color: #006e99; /* Cor do Disney+ */
     color: #fff;
