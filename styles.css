@@ -298,43 +298,43 @@ footer.light {
     color: #333; /* Texto escuro para os itens */
 }
 
-/* Efeitos de hover para o tema claro */
-.top-10-item.light.one-above-all:hover {
+/* Cores de hover para o tema claro */
+.top-10-item.one-above-all:hover {
     background-color: #ffe680; /* Amarelo claro */
 }
 
-.top-10-item.light.infinity-gauntlet:hover {
+.top-10-item.infinity-gauntlet:hover {
     background-color: #d5c6e0; /* Cor clara */
 }
 
-.top-10-item.light.living-tribunal:hover {
+.top-10-item.living-tribunal:hover {
     background-color: #ffe680; /* Amarelo claro */
 }
 
-.top-10-item.light.beyonder:hover {
+.top-10-item.beyonder:hover {
     background-color: #a8b2b4; /* Cinza claro puxado pro azul */
 }
 
-.top-10-item.light.eternity:hover {
+.top-10-item.eternity:hover {
     background-color: #b0e0ff; /* Azul claro que representa Eternidade */
 }
 
-.top-10-item.light.scarlet-witch:hover {
+.top-10-item.scarlet-witch:hover {
     background-color: #ff9999; /* Vermelho claro puxado pro vinho */
 }
 
-.top-10-item.light.franklin-richards:hover {
+.top-10-item.franklin-richards:hover {
     background-color: #e0ffff; /* Azul bebê claro */
 }
 
-.top-10-item.light.phoenix-force:hover {
+.top-10-item.phoenix-force:hover {
     background-color: #ff9980; /* Vermelho alaranjado claro */
 }
 
-.top-10-item.light.amatsu-mikaboshi:hover {
+.top-10-item.amatsu-mikaboshi:hover {
     background-color: #d5b0e0; /* Preto puxado pro roxo claro */
 }
 
-.top-10-item.light.mephisto:hover {
+.top-10-item.mephisto:hover {
     background-color: #ff9999; /* Vermelho claro */
 }
