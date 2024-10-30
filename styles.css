@@ -212,3 +212,42 @@ footer button:hover {
     transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
 }
+.top-10-item.one-above-all {
+    background-color: #FFD700; /* Amarelo */
+}
+
+.top-10-item.infinity-gauntlet {
+    background-color: #6A0dad; /* Cor que combina com as Joias do Infinito (roxo) */
+}
+
+.top-10-item.living-tribunal {
+    background-color: #FFD700; /* Amarelo mais escuro */
+}
+
+.top-10-item.beyonder {
+    background-color: #708090; /* Cinza puxado pro azul */
+}
+
+.top-10-item.eternity {
+    background-color: #1E90FF; /* Azul que representa Eternidade */
+}
+
+.top-10-item.scarlet-witch {
+    background-color: #8B0000; /* Vermelho puxado pro vinho */
+}
+
+.top-10-item.franklin-richards {
+    background-color: #B0E0E6; /* Azul bebê */
+}
+
+.top-10-item.phoenix-force {
+    background-color: #FF4500; /* Vermelho alaranjado */
+}
+
+.top-10-item.amatsu-mikaboshi {
+    background-color: #4B0082; /* Preto puxado pro roxo */
+}
+
+.top-10-item.mephisto {
+    background-color: #8B0000; /* Vermelho com um pouco de preto */
+}
