@@ -250,7 +250,6 @@ footer button:hover {
 
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
-}
 /* Estilos padrão (Tema Escuro) */
 body {
     font-family: 'Roboto', sans-serif;
@@ -277,12 +276,12 @@ footer {
 
 /* Tema Claro */
 body.light {
-    background-color: #f9f9f9; /* Fundo claro */
+    background-color: #f0f0f0; /* Fundo claro */
     color: #333; /* Texto escuro */
 }
 
 header.light {
-    background-color: #ffffff; /* Cabeçalho branco */
+    background-color: #fff; /* Cabeçalho branco */
 }
 
 header.light h1 {
@@ -290,15 +289,11 @@ header.light h1 {
 }
 
 footer.light {
-    background-color: #ffffff; /* Rodapé branco */
-}
-
-h2.light {
-    color: #c70000; /* Títulos em vermelho escuro */
+    background-color: #fff; /* Rodapé branco */
 }
 
 .top-10-item.light {
-    background-color: #f0f0f0; /* Fundo claro para os itens */
+    background-color: #f5f5f5; /* Fundo claro para os itens */
     color: #333; /* Texto escuro para os itens */
 }
 
