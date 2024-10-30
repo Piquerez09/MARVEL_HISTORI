@@ -251,70 +251,59 @@ footer button:hover {
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
 }
-/* Estilos para o tema claro */
-body.light-mode {
+/* Tema Escuro */
+body {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background-color: #333; /* Cinza escuro */
+}
+
+header h1 {
+    color: #fff; /* Título em branco */
+}
+
+footer {
+    background-color: #333; /* Cinza escuro */
+}
+
+.top-10-item {
+    background-color: #444; /* Fundo dos itens */
+    color: #fff; /* Texto claro */
+}
+
+/* Tema Claro */
+body.light {
     background-color: #f0f0f0; /* Fundo claro */
     color: #333; /* Texto escuro */
 }
 
-header.light-mode {
+header.light {
     background-color: #fff; /* Fundo branco */
 }
 
-header.light-mode h1 {
+header.light h1 {
     color: #ff0000; /* Título vermelho */
 }
 
-footer.light-mode {
+footer.light {
     background-color: #fff; /* Fundo branco */
 }
 
-footer.light-mode p {
-    color: #333; /* Texto escuro no rodapé */
-}
-
-.top-10-item {
+.top-10-item.light {
     background-color: #f5f5f5; /* Fundo claro para os itens */
     color: #333; /* Texto escuro para os itens */
 }
 
-/* Estilos de hover para o tema claro */
-.top-10-item.one-above-all:hover {
-    background-color: #ffe680; /* Amarelo claro ao passar o mouse */
+/* Efeitos de hover para o tema claro */
+.top-10-item.light.one-above-all:hover {
+    background-color: #ffe680; /* Amarelo claro */
 }
 
-.top-10-item.infinity-gauntlet:hover {
-    background-color: #d5c6e0; /* Cor clara que combina com as Joias do Infinito ao passar o mouse */
+.top-10-item.light.infinity-gauntlet:hover {
+    background-color: #d5c6e0; /* Cor clara */
 }
 
-.top-10-item.living-tribunal:hover {
-    background-color: #ffe680; /* Amarelo mais claro ao passar o mouse */
-}
-
-.top-10-item.beyonder:hover {
-    background-color: #a8b2b4; /* Cinza claro puxado pro azul ao passar o mouse */
-}
-
-.top-10-item.eternity:hover {
-    background-color: #b0e0ff; /* Azul claro que representa Eternidade ao passar o mouse */
-}
-
-.top-10-item.scarlet-witch:hover {
-    background-color: #ff9999; /* Vermelho claro puxado pro vinho ao passar o mouse */
-}
-
-.top-10-item.franklin-richards:hover {
-    background-color: #e0ffff; /* Azul bebê claro ao passar o mouse */
-}
-
-.top-10-item.phoenix-force:hover {
-    background-color: #ff9980; /* Vermelho alaranjado claro ao passar o mouse */
-}
-
-.top-10-item.amatsu-mikaboshi:hover {
-    background-color: #d5b0e0; /* Preto puxado pro roxo claro ao passar o mouse */
-}
-
-.top-10-item.mephisto:hover {
-    background-color: #ff9999; /* Vermelho claro ao passar o mouse */
-}
+/* Adicione outros itens de hover conforme necessário para o tema claro */
