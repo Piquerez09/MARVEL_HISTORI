@@ -251,14 +251,15 @@ footer button:hover {
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
 }
-/* Tema Escuro */
+/* Estilos padrão (Tema Escuro) */
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a; /* Fundo escuro */
     color: #e0e0e0; /* Texto claro */
 }
 
 header {
-    background-color: #333; /* Cinza escuro */
+    background-color: #333; /* Cabeçalho escuro */
 }
 
 header h1 {
@@ -266,7 +267,7 @@ header h1 {
 }
 
 footer {
-    background-color: #333; /* Cinza escuro */
+    background-color: #333; /* Rodapé escuro */
 }
 
 .top-10-item {
@@ -281,7 +282,7 @@ body.light {
 }
 
 header.light {
-    background-color: #fff; /* Fundo branco */
+    background-color: #fff; /* Cabeçalho branco */
 }
 
 header.light h1 {
@@ -289,7 +290,7 @@ header.light h1 {
 }
 
 footer.light {
-    background-color: #fff; /* Fundo branco */
+    background-color: #fff; /* Rodapé branco */
 }
 
 .top-10-item.light {
@@ -306,4 +307,34 @@ footer.light {
     background-color: #d5c6e0; /* Cor clara */
 }
 
-/* Adicione outros itens de hover conforme necessário para o tema claro */
+.top-10-item.light.living-tribunal:hover {
+    background-color: #ffe680; /* Amarelo claro */
+}
+
+.top-10-item.light.beyonder:hover {
+    background-color: #a8b2b4; /* Cinza claro puxado pro azul */
+}
+
+.top-10-item.light.eternity:hover {
+    background-color: #b0e0ff; /* Azul claro que representa Eternidade */
+}
+
+.top-10-item.light.scarlet-witch:hover {
+    background-color: #ff9999; /* Vermelho claro puxado pro vinho */
+}
+
+.top-10-item.light.franklin-richards:hover {
+    background-color: #e0ffff; /* Azul bebê claro */
+}
+
+.top-10-item.light.phoenix-force:hover {
+    background-color: #ff9980; /* Vermelho alaranjado claro */
+}
+
+.top-10-item.light.amatsu-mikaboshi:hover {
+    background-color: #d5b0e0; /* Preto puxado pro roxo claro */
+}
+
+.top-10-item.light.mephisto:hover {
+    background-color: #ff9999; /* Vermelho claro */
+}
