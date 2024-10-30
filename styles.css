@@ -252,36 +252,39 @@ footer button:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
 /* Estilos padrão (Tema Escuro) */
 body {
+/* Estilos padrão (Tema Escuro) */
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a; /* Fundo escuro */
     color: #e0e0e0; /* Texto claro */
 }
 
+/* Estilos do cabeçalho */
 header {
     background-color: #333; /* Cabeçalho escuro */
+    text-align: center;
+    padding: 20px;
 }
 
 header h1 {
     color: #fff; /* Título em branco */
 }
 
+/* Estilos do rodapé */
 footer {
     background-color: #333; /* Rodapé escuro */
+    text-align: center;
+    padding: 10px;
 }
 
-.top-10-item {
-    background-color: #444; /* Fundo dos itens */
-    color: #fff; /* Texto claro */
-}
-
-/* Tema Claro */
+/* Estilo para o modo claro */
 body.light {
-    background-color: #f0f0f0; /* Fundo claro */
+    background-color: #f9f9f9; /* Fundo claro */
     color: #333; /* Texto escuro */
 }
 
 header.light {
-    background-color: #fff; /* Cabeçalho branco */
+    background-color: #ffffff; /* Cabeçalho branco */
 }
 
 header.light h1 {
@@ -289,51 +292,34 @@ header.light h1 {
 }
 
 footer.light {
-    background-color: #fff; /* Rodapé branco */
+    background-color: #ffffff; /* Rodapé branco */
 }
 
+/* Títulos no modo claro */
+h2.light {
+    color: #c70000; /* Títulos em vermelho escuro */
+}
+
+/* Itens do Top 10 */
+.top-10-item {
+    background-color: #444; /* Fundo escuro para os itens */
+    color: #fff; /* Texto claro */
+}
+
+/* Modo claro para itens do Top 10 */
 .top-10-item.light {
-    background-color: #f5f5f5; /* Fundo claro para os itens */
-    color: #333; /* Texto escuro para os itens */
+    background-color: #f0f0f0; /* Fundo claro */
+    color: #333; /* Texto escuro */
 }
 
-/* Cores de hover para o tema claro */
-.top-10-item.one-above-all:hover {
-    background-color: #ffe680; /* Amarelo claro */
-}
-
-.top-10-item.infinity-gauntlet:hover {
-    background-color: #d5c6e0; /* Cor clara */
-}
-
-.top-10-item.living-tribunal:hover {
-    background-color: #ffe680; /* Amarelo claro */
-}
-
-.top-10-item.beyonder:hover {
-    background-color: #a8b2b4; /* Cinza claro puxado pro azul */
-}
-
-.top-10-item.eternity:hover {
-    background-color: #b0e0ff; /* Azul claro que representa Eternidade */
-}
-
-.top-10-item.scarlet-witch:hover {
-    background-color: #ff9999; /* Vermelho claro puxado pro vinho */
-}
-
-.top-10-item.franklin-richards:hover {
-    background-color: #e0ffff; /* Azul bebê claro */
-}
-
-.top-10-item.phoenix-force:hover {
-    background-color: #ff9980; /* Vermelho alaranjado claro */
-}
-
-.top-10-item.amatsu-mikaboshi:hover {
-    background-color: #d5b0e0; /* Preto puxado pro roxo claro */
-}
-
-.top-10-item.mephisto:hover {
-    background-color: #ff9999; /* Vermelho claro */
-}
+/* Ajustes de cor ao passar o mouse no modo claro */
+.top-10-item.one-above-all.light:hover { background-color: #ffe680; }
+.top-10-item.infinity-gauntlet.light:hover { background-color: #d5c6e0; }
+.top-10-item.living-tribunal.light:hover { background-color: #ffe680; }
+.top-10-item.beyonder.light:hover { background-color: #a8b2b4; }
+.top-10-item.eternity.light:hover { background-color: #b0e0ff; }
+.top-10-item.scarlet-witch.light:hover { background-color: #ff9999; }
+.top-10-item.franklin-richards.light:hover { background-color: #e0ffff; }
+.top-10-item.phoenix-force.light:hover { background-color: #ff9980; }
+.top-10-item.amatsu-mikaboshi.light:hover { background-color: #d5b0e0; }
+.top-10-item.mephisto.light:hover { background-color: #ff9999; }
