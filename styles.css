@@ -247,31 +247,7 @@ footer button:hover {
 .top-10-item.amatsu-mikaboshi:hover {
     background-color: #4B0082; /* Preto puxado pro roxo ao passar o mouse */
 }
+
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
-}
-button {
-    background-color: #006e99; /* Cor do Disney+ */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #005577; /* Cor ao passar o mouse */
-}
-    background-color: #006e99;; /* Vermelho com um pouco de preto ao passar o mouse */}
-    footer button {
-        background-color: #970303; /* Nova cor */
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    footer button:hover {
-        background-color: #005577; /* Um tom mais escuro para o hover */
-    }
+}                                                          
