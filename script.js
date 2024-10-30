@@ -25,3 +25,15 @@ console.log("Bem-vindo ao Marvel Fans!");
         location.reload(); // Atualiza a página
     });
 </script>
+// Adiciona evento de mudança ao seletor de tema
+themeSelector.addEventListener('change', () => {
+    const theme = themeSelector.value;
+    localStorage.setItem('theme', theme); // Armazena a preferência de tema
+    body.classList.toggle('light', theme === 'light');
+    header.classList.toggle('light', theme === 'light');
+    footer.classList.toggle('light', theme === 'light');
+    document.querySelectorAll('h2').forEach(title => {
+        title.classList.toggle('light', theme === 'light');
+    });
+    location.reload(); // Atualiza a página
+});
