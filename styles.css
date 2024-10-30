@@ -296,8 +296,12 @@ footer.light {
 }
 
 /* Títulos no modo claro */
+h2 {
+    color: #ff4500; /* Cor original no escuro */
+}
+
 h2.light {
-    color: #c70000; /* Títulos em vermelho escuro */
+    color: #c70000; /* Títulos em vermelho escuro no claro */
 }
 
 /* Itens do Top 10 */
@@ -323,3 +327,4 @@ h2.light {
 .top-10-item.phoenix-force.light:hover { background-color: #ff9980; }
 .top-10-item.amatsu-mikaboshi.light:hover { background-color: #d5b0e0; }
 .top-10-item.mephisto.light:hover { background-color: #ff9999; }
+}}

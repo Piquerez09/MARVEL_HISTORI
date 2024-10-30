@@ -2,16 +2,13 @@
 console.log("Bem-vindo ao Marvel Fans!");
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
-    
+
     // Verifica a preferência de tema armazenada
     const currentTheme = localStorage.getItem('theme') || 'dark';
 
     // Aplica o tema correto ao carregar a página
     if (currentTheme === 'light') {
         document.body.classList.add('light');
-        document.querySelector('header').classList.add('light');
-        document.querySelector('footer').classList.add('light');
-        document.querySelectorAll('h2').forEach(title => title.classList.add('light'));
         themeToggle.textContent = 'Tema Escuro';
     } else {
         themeToggle.textContent = 'Tema Claro';
