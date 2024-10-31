@@ -207,17 +207,13 @@ footer button:hover {
 .video-container iframe {
     transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transição */
 }
-.video-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mantém os vídeos em colunas */
-    gap: 20px; /* Volta o espaçamento original */
-}
+.video-container iframe:hover {
+    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
 
-}
-.top-10-item.one-above-all:hover {
+    .top-10-item.one-above-all:hover {
     background-color: #FFD700; /* Amarelo ao passar o mouse */
 }
-
 .top-10-item.infinity-gauntlet:hover {
     background-color: #6A0dad; /* Cor que combina com as Joias do Infinito ao passar o mouse */
 }
