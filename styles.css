@@ -209,8 +209,10 @@ footer button:hover {
 }
 .video-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste o tamanho mínimo conforme necessário */
-    gap: 10px; /* Espaçamento entre os vídeos */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mantém os vídeos em colunas */
+    gap: 20px; /* Volta o espaçamento original */
+}
+
 }
 .top-10-item.one-above-all:hover {
     background-color: #FFD700; /* Amarelo ao passar o mouse */
