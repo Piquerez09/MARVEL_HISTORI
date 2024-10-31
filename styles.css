@@ -251,6 +251,6 @@ footer button:hover {
 .top-10-item.mephisto:hover {
     background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
 }
-.top-10-item.loki:hover {
-    background-color: #008000; /* Verde ao passar o mouse */
+#loki h2:hover {
+    color: #008000; /* Verde ao passar o mouse */
 }
