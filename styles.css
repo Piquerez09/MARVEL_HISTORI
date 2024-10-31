@@ -255,3 +255,7 @@ footer button:hover {
 #homem-de-ferro h2:hover {
     color: #ff1a1a; /* Cor ao passar o mouse */
 }
+header h1:hover {
+    color: #ff0000; /* Vermelho chamativo */
+    transition: color 0.3s; /* Transição suave */
+}
