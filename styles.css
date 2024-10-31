@@ -23,9 +23,6 @@ header h1 {
     color: #fff; /* Título em branco para destaque */
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-        color: #ff0000; /* Vermelho chamativo */
-        transition: color 0.3s; /* Transição suave */
-
 }
 
 /* Estilos para o conteúdo principal */
