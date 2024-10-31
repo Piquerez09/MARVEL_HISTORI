@@ -23,6 +23,10 @@ header h1 {
     color: #fff; /* Título em branco para destaque */
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    header h1:hover {
+        color: #ff0000; /* Vermelho chamativo */
+        transition: color 0.3s; /* Transição suave */
+    }
 }
 
 /* Estilos para o conteúdo principal */
@@ -254,8 +258,4 @@ footer button:hover {
 }
 #homem-de-ferro h2:hover {
     color: #ff1a1a; /* Cor ao passar o mouse */
-}
-header h1:hover {
-    color: #ff0000; /* Vermelho chamativo */
-    transition: color 0.3s; /* Transição suave */
 }
