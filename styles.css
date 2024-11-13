@@ -1,17 +1,25 @@
-/* Fontes Globais */
+/* Resetando margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
     color: #eaeaea;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
+    padding: 20px 0;
 }
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-/* Efeito Fade-In */
+/* Efeito de Fade-in */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -24,68 +32,64 @@ h1, h2 {
 }
 
 .fade-in {
-    animation: fadeIn 0.5s ease-out forwards;
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #1c1c1c;
-    padding: 20px;
+    background-color: #333;
+    padding: 20px 10%;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     transition: padding 0.3s ease;
 }
 
 header.scrolled {
-    padding: 10px 20px;
+    padding: 10px 10%;
     background-color: #111;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-/* Conteúdo Principal */
+/* Main */
 main {
     margin-top: 100px;
-    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Seções */
 section {
-    margin-bottom: 30px;
-}
-
-ul, ol {
-    list-style-type: none;
-    padding: 0;
+    margin-bottom: 40px;
 }
 
 /* Listas */
-.top-10-list, .filmes-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
-    padding: 0;
+ul, ol {
+    list-style-type: none;
 }
 
-.top-10-item, .filmes-list li {
+.top-10-list li, .filmes-list li {
     background-color: #444;
     padding: 15px;
+    margin: 10px 0;
     border-radius: 8px;
     text-align: center;
-    color: white;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.top-10-item:hover, .filmes-list li:hover {
+.top-10-list li:hover, .filmes-list li:hover {
     background-color: #ff4500;
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Vídeos */
@@ -103,23 +107,24 @@ iframe {
 
 /* Footer */
 footer {
-    background-color: #1c1c1c;
+    background-color: #222;
     padding: 20px;
     text-align: center;
+    margin-top: 40px;
 }
 
 footer button {
     background-color: #ff4500;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 footer button:hover {
     background-color: #d6d3ae;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
