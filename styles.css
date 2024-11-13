@@ -239,3 +239,4 @@ footer button:hover {
 .video-container iframe:hover {
     transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */    
+}
