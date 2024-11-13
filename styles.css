@@ -119,16 +119,45 @@ footer button:hover {
     justify-content: space-between; 
     align-items: center; 
 }
-
 /* Estilos para o Top 10 */
 .top-10-container {
     background-color: #2a2a2a; /* Fundo escuro */
     border-radius: 10px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    margin: 20px 0; 
+    margin: 20px auto; /* Adiciona margem superior e inferior, centraliza o conteúdo */
+    max-width: 1200px; /* Define uma largura máxima para o container */
 }
-
+.top-10-list {
+    list-style: none; 
+    padding: 0; 
+    counter-reset: item; /* Reseta o contador */
+}
+.top-10-item {
+    background-color: #444444; /* Cor de fundo para os itens */
+    color: #fff; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    display: flex; /* Usando flexbox para melhor controle */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: space-between; /* Distribui espaço entre número e nome */
+}
+.top-10-item::before {
+    content: counter(item) ". "; /* Adiciona os números */
+    counter-increment: item; /* Incrementa o contador */
+    font-weight: bold; 
+    color: #ff9900; 
+    margin-right: 20px; /* Espaço entre número e nome */
+    flex-shrink: 0; /* Impede que o número encolha */
+}
+.top-10-item-name {
+    flex-grow: 1; /* Permite que o nome ocupe o espaço restante */
+    text-align: left; /* Alinhando o texto à esquerda */
+    margin-left: 10px; /* Espaço à esquerda do nome */
+}
 .top-10-list {
     list-style: none; 
     padding: 0; 
