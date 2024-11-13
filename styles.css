@@ -210,46 +210,11 @@ footer button:hover {
 .video-container iframe:hover {
     transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
-
-    .top-10-item.one-above-all:hover {
-    background-color: #FFD700; /* Amarelo ao passar o mouse */
 }
-.top-10-item.infinity-gauntlet:hover {
-    background-color: #6A0dad; /* Cor que combina com as Joias do Infinito ao passar o mouse */
+#loki h2 {
+    transition: color 0.3s; /* Transição suave de cor */
 }
 
-.top-10-item.living-tribunal:hover {
-    background-color: #FFD700; /* Amarelo mais escuro ao passar o mouse */
-}
-
-.top-10-item.beyonder:hover {
-    background-color: #708090; /* Cinza puxado pro azul ao passar o mouse */
-}
-
-.top-10-item.eternity:hover {
-    background-color: #1E90FF; /* Azul que representa Eternidade ao passar o mouse */
-}
-
-.top-10-item.scarlet-witch:hover {
-    background-color: #8B0000; /* Vermelho puxado pro vinho ao passar o mouse */
-}
-
-.top-10-item.franklin-richards:hover {
-    background-color: #B0E0E6; /* Azul bebê ao passar o mouse */
-}
-
-.top-10-item.phoenix-force:hover {
-    background-color: #FF4500; /* Vermelho alaranjado ao passar o mouse */
-}
-
-.top-10-item.amatsu-mikaboshi:hover {
-    background-color: #4B0082; /* Preto puxado pro roxo ao passar o mouse */
-}
-
-.top-10-item.mephisto:hover {
-    background-color: #8B0000; /* Vermelho com um pouco de preto ao passar o mouse */
-}
 #loki h2:hover {
-    color: #008000; /* Verde */
-    transition: color 0.3s; /* Transição suave */
+    color: #d6d3ae; /* Cor desejada ao passar o mouse */
 }
