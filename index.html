@@ -3,86 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tudo sobre o universo Marvel: personagens, filmes, séries e muito mais para os fãs!">
-    <meta name="keywords" content="Marvel, Vingadores, Heróis, Filmes, Séries, Personagens">
-    <meta property="og:title" content="Marvel Fans">
-    <meta property="og:description" content="Explore o incrível universo Marvel com conteúdos exclusivos sobre heróis, filmes e muito mais!">
-    <meta property="og:image" content="URL_DA_IMAGEM_AQUI">
-    <meta property="og:url" content="URL_DO_SEU_SITE_AQUI">
     <title>Marvel Fans</title>
     <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="header-container">
             <h1>Marvel Fans</h1>
         </div>    
     </header>    
-    
     <main>
-        <section id="historia" class="fade-in">
-            <h2>Um Pouco da História da Marvel</h2>
-            <p>A Marvel começou em 1939 com a Timely Publications, mas foi na década de 60 que o Universo Marvel começou a ganhar forma com a criação de heróis icônicos como Homem-Aranha, Capitão América, Hulk, Thor e muitos outros.</p>
-        </section>
+            <section id="historia">
+                <h2>Um Pouco da História da Marvel</h2>
+                <p class="historia-text">A história da Marvel começa em 1939, quando a Timely Publications (futura Marvel Comics) foi fundada. O primeiro grande sucesso foi "Captain America" durante a Segunda Guerra Mundial.
 
-        <section id="top-10" class="fade-in">
-            <h2>Top 10 Personagens Mais Poderosos</h2>
-            <ul class="top-10-list">
-                <li>One-Above-All</li>
-                <li>Qualquer um usando a Manopla do Infinito</li>
-                <li>Tribunal Vivo</li>
-                <li>Beyonder</li>
-                <li>Eternidade</li>
-                <li>Feiticeira Escarlate</li>
-                <li>Franklin Richards</li>
-                <li>Força Fênix</li>
-                <li>Amatsu-Mikaboshi</li>
-                <li>Mefisto</li>
-            </ul>
-        </section>
-
-        <section id="filmes" class="fade-in">
-            <h2>Filmes e Séries da Marvel</h2>
-            <div class="filmes-container">
-                <ul class="filmes-list">
-                    <li>Capitão América: O Primeiro Vingador (2011)</li>
-                    <li>Homem de Ferro (2008)</li>
-                    <li>Vingadores: Ultimato (2019)</li>
-                    <li>Pantera Negra (2018)</li>
-                    <li>Guardians da Galáxia Vol. 3 (2023)</li>
-                </ul>
+                    Na década de 1960, Stan Lee e Jack Kirby criaram o Universo Marvel com personagens icônicos como os X-Men, Thor, Hulk e os Vingadores, introduzindo histórias mais complexas e realistas. Em 1962, Spider-Man fez sua estreia, rapidamente se tornando um dos personagens mais populares.
+                    
+                    Durante os anos 70 e 80, a Marvel continuou a expandir seu universo com novas séries e personagens, incluindo os Guardiões da Galáxia e o Demolidor. Nos anos 90, a empresa enfrentou dificuldades financeiras, mas revitalizou sua linha de quadrinhos com a introdução de histórias mais sombrias e a popularização de personagens como Wolverine.
+                    
+                    A partir de 2000, a Marvel começou a adaptar suas histórias para o cinema, culminando no lançamento do Marvel Cinematic Universe (MCU) em 2008 com "Iron Man". O MCU se expandiu rapidamente, incluindo filmes de diversos heróis e culminando em grandes eventos como "Os Vingadores" e "Vingadores: Ultimato".
+                    
+                    Hoje, a Marvel é uma das maiores franquias de entretenimento do mundo, com quadrinhos, filmes, séries de TV e muito mais, continuando a cativar novas gerações de fãs.</p>
+            </section>            
+            <section id="top-10">
+                <div class="top-10-container">
+                    <h2>Top 10 Personagens Mais Poderosos da Marvel</h2>
+                    <ol class="top-10-list">
+                        <li class="top-10-item one-above-all"><span class="top-10-item-name">One-Above-All - Aquele Acima De Todos</span></li>
+                        <li class="top-10-item infinity-gauntlet"><span class="top-10-item-name">Qualquer um usando a Manopla do Infinito</span></li>
+                        <li class="top-10-item living-tribunal"><span class="top-10-item-name">Tribunal Vivo</span></li>
+                        <li class="top-10-item beyonder"><span class="top-10-item-name">Beyonder</span></li>
+                        <li class="top-10-item eternity"><span class="top-10-item-name">Eternidade</span></li>
+                        <li class="top-10-item scarlet-witch"><span class="top-10-item-name">Feiticeira Escarlate</span></li>
+                        <li class="top-10-item franklin-richards"><span class="top-10-item-name">Franklin Richards</span></li>
+                        <li class="top-10-item phoenix-force"><span class="top-10-item-name">Força Fênix</span></li>
+                        <li class="top-10-item amatsu-mikaboshi"><span class="top-10-item-name">Amatsu-Mikaboshi</span></li>
+                        <li class="top-10-item mephisto"><span class="top-10-item-name">Mefisto</span></li>
+                    </ol>                    
+                </div>
+            </section>            
+            <section id="filmes">
+                <h2>Lista de Filmes e Séries da Marvel em Ordem Cronológica</h2>
+                <div class="filmes-container">
+                    <ul class="filmes-list">
+                        <li>1. Capitão América: O Primeiro Vingador (2011)</li>
+                        <li>2. Capitã Marvel (2019)</li>
+                        <li>3. Homem de Ferro (2008)</li>
+                        <li>4. O Incrível Hulk (2008)</li>
+                        <li>5. Homem de Ferro 2 (2010)</li>
+                        <li>6. Thor (2011)</li>
+                        <li>7. Vingadores (2012)</li>
+                        <li>8. Thor: O Mundo Sombrio (2013)</li>
+                        <li>9. Capitão América: O Soldado Invernal (2014)</li>
+                        <li>10. Guardiões da Galáxia (2014)</li>
+                        <li>11. Vingadores: Era de Ultron (2015)</li>
+                        <li>12. Homem-Formiga (2015)</li>
+                        <li>13. Capitão América: Guerra Civil (2016)</li>
+                        <li>14. Doutor Estranho (2016)</li>
+                        <li>15. Guardiões da Galáxia Vol. 2 (2017)</li>
+                        <li>16. Spider-Man: De Volta ao Lar (2017)</li>
+                        <li>17. Thor: Ragnarok (2017)</li>
+                        <li>18. Pantera Negra (2018)</li>
+                        <li>19. Vingadores: Guerra Infinita (2018)</li>
+                        <li>20. Homem-Formiga e a Vespa (2018)</li>
+                        <li>21. Vingadores: Ultimato (2019)</li>
+                        <li>22. Viúva Negra (2021)</li>
+                        <li>23. Falcão e o Soldado Invernal (2021)</li>
+                        <li>24. Wandavision (2021)</li>
+                        <li>25. Loki (2021)</li>
+                        <li>26. Shang-Chi e a Lenda dos Dez Anéis (2021)</li>
+                        <li>27. Eternos (2021)</li>
+                        <li>28. Homem-Aranha: Sem Volta Para Casa (2021)</li>
+                        <li>29. Doutor Estranho no Multiverso da Loucura (2022)</li>
+                        <li>30. Thor: Amor e Trovão (2022)</li>
+                        <li>31. Pantera Negra: Wakanda Para Sempre (2022)</li>
+                        <li>32. Mulher-Hulk: Defensora de Heróis (2022)</li>
+                        <li>33. Marvels (2023)</li>
+                        <li>34. Guardiões da Galáxia Vol. 3 (2023)</li>
+                        <li>35. Secret Invasion (2023)</li>
+                        <li>36. Agatha: House of Harkness (2024)</li>
+                        <li>37. Capitão América: Nova Ordem Mundial (2024)</li>
+                    </ul>
+                </div>
+            </section>            
+                    </div>
+                </section>
+                <section id="homem-de-ferro">
+                    <section id="homem-de-ferro">
+                        <h2>Homem de Ferro (Pai do UCM)</h2>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ZsccR9x_dSM" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/fF4xLTStWxs" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/rNbZ4DD7IPo" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/Be81oqHytyA" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/uplkxc0_JI0" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/c09HHPXJbCs" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/HKKdqwA9_KE" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/gIFTClYQ2as" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/Y34GheYPTbI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </section>                    
+                <section id="loki">
+                    <h2>Loki</h2>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/w3edu5CPKec" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/XWnbIuDjLC0" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/ajFRA_cyKZE" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/_128MHeyDis" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/yS-iMqgc0n4" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/GEqrlg-vPiI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>                                           
+        <section id="videos">
+            <h2>Vídeos Resumindo Personagens e Explicando Cenas de Filmes</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/3AN9nFTkhgE" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MaLy0D2FTDc" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/l4qTHELOBdw" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/tcDjVpH4NoU" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-
-        <section id="homem-de-ferro" class="fade-in">
-            <h2>Homem de Ferro</h2>
+        
+        <section id="nivel-de-poder">
+            <h2>Nível de Poder</h2>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/ZsccR9x_dSM" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/fF4xLTStWxs" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/rNbZ4DD7IPo" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/uy8dnQU_-K8" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MNGKfzCZjIo" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/-NJCqBi21aQ" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Y7qhcqTxjXM" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Marvel Fans. Todos os direitos reservados.</p>
-            <button>Disney+</button>
-        </div>
-    </footer>
+    <audio controls loop>
+        <source src="seu_arquivo.mp3" type="audio/mpeg">
+        <source src="seu_arquivo.ogg" type="audio/ogg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
-    <script>
-        // Efeito de scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <footer>
+        <p>&copy; 2024 Marvel Fans. Todos os direitos reservados.</p>
+        <a href="https://www.disneyplus.com/pt-br?gclid=07a8cf911af610f6b012a886b7e793a3&gclsrc=3p.ds&&cid=DSS-Search-Bing-71700000075038492&s_kwcid=AL!8468!10!79233764217949!disney%2B&msclkid=07" target="_blank">
+            <button>Disney+</button>
+        </a>
+    </footer>
 </body>
-</html>
+</html>          
