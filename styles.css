@@ -1,212 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-/* Global Styles */
+/* Fontes Globais */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a; /* Fundo bem escuro */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #121212;
+    color: #eaeaea;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos do cabeçalho */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Efeito Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Cabeçalho */
 header {
-    background-color: #333333; /* Cinza bem escuro */
-    text-align: center;
+    background-color: #1c1c1c;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: padding 0.3s ease;
+}
+
+header.scrolled {
+    padding: 10px 20px;
+    background-color: #111;
 }
 
 header h1 {
-    font-size: 3em;
-    color: #fff; /* Título em branco para destaque */
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #fff;
 }
 
-/* Estilos para o conteúdo principal */
+/* Conteúdo Principal */
 main {
+    margin-top: 100px;
     padding: 20px;
 }
 
-/* Estilo para o título das seções */
-h2 {
-    color: #ff0800; /* Laranja escuro para destaque */
-    border-bottom: 2px solid#ff0800;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+section {
+    margin-bottom: 30px;
 }
 
-/* Estilos do rodapé */
-footer {
-    background-color: #333333; /* Cinza bem escuro */
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Listas */
+.top-10-list, .filmes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 0;
+}
+
+.top-10-item, .filmes-list li {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-footer p {
-    margin: 0;
+.top-10-item:hover, .filmes-list li:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Vídeos */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
 }
 
 footer button {
-    background-color: #ff4500; /* Laranja escuro */
-    color: #fff;
+    background-color: #ff4500;
+    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 footer button:hover {
-    background-color: #e63900; /* Laranja mais escuro ao passar o mouse */
+    background-color: #d6d3ae;
+    transform: translateY(-3px);
 }
-
-/* Estilos para a lista de filmes e séries */
-.filmes-container {
-    background-color: #2a2a2a; /* Cinza escuro */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px 0;
-}
-
-.filmes-list {
-    list-style: none;
-    padding: 0;
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; 
-}
-
-.filmes-list li {
-    background-color: #444444; /* Cinza mais escuro */
-    color: #fff; 
-    padding: 20px;
-    border-radius: 10px; 
-    transition: background-color 0.3s, transform 0.3s; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-    text-align: center; 
-    position: relative; 
-}
-
-.filmes-list li:hover {
-    background-color: #ff4500; 
-    transform: scale(1.05); 
-}
-
-/* Estilos do logo */
-.logo {
-    max-width: 150px; 
-    margin-top: 10px; 
-    border-radius: 10px; 
-    transition: transform 0.3s, box-shadow 0.3s; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-}
-
-.logo:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
-}
-
-/* Estilos do menu de configurações */
-.header-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-/* Estilos para o Top 10 */
-.top-10-container {
-    background-color: #2a2a2a; /* Fundo escuro */
-    border-radius: 10px; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    margin: 20px 0; 
-}
-
-.top-10-list {
-    list-style: none; 
-    padding: 0; 
-}
-
-.top-10-item {
-    background-color: #444444; /* Cor de fundo para os itens */
-    color: #fff; 
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 8px; 
-    transition: background-color 0.3s, transform 0.3s; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-    position: relative; 
-    text-align: left; 
-    display: flex; 
-    justify-content: space-between; 
-}
-
-.top-10-item:hover {
-    background-color: #ff4500; /* Efeito hover igual ao da lista de filmes */
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
-}
-
-.top-10-item::before {
-    content: counter(item) ". "; 
-    counter-increment: item; 
-    font-weight: bold; 
-    color: #ff9900; 
-    margin-right: 10px; 
-}
-/* Estilo para o texto da história */
-.historia-text {
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
-    background-color: #2a2a2a; /* Fundo escuro para contraste */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    margin-top: 10px; /* Margem superior */
-}
-
-/* Estilos para o Top 10 */
-.top-10-list {
-    list-style: none; 
-    padding: 0; 
-    counter-reset: item; /* Reseta o contador */
-}
-
-.top-10-item {
-    background-color: #444444; /* Cor de fundo para os itens */
-    color: #fff; 
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 8px; 
-    transition: background-color 0.3s, transform 0.3s; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-    display: flex; /* Usando flexbox para melhor controle */
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    justify-content: space-between; /* Distribui espaço entre número e nome */
-}
-
-.top-10-item::before {
-    content: counter(item) ". "; /* Adiciona os números */
-    counter-increment: item; /* Incrementa o contador */
-    font-weight: bold; 
-    color: #ff9900; 
-    margin-right: 20px; /* Espaço entre número e nome */
-    flex-shrink: 0; /* Impede que o número encolha */
-}
-
-.top-10-item-name {
-    flex-grow: 1; /* Permite que o nome ocupe o espaço restante */
-    text-align: left; /* Alinhando o texto à esquerda */
-    margin-left: 10px; /* Espaço à esquerda do nome */
-}
-.video-container iframe {
-    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transição */
-}
-.video-container iframe:hover {
-    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
